@@ -1,5 +1,5 @@
 .flip-card {
-  @apply relative w-64 h-64;
+  @apply relative w-32 h-40;
   perspective: 1500px;
 }
 

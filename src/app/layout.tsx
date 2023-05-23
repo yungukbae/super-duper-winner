@@ -1,7 +1,7 @@
 import "./globals.css";
-import { Inter, Playfair_Display } from "next/font/google";
+import { Inter, Noto_Serif } from "next/font/google";
 
-const playfairDisplay = Playfair_Display({ subsets: ["latin"] });
+const font = Noto_Serif({ weight: "400", subsets: ["latin"] });
 
 export const metadata = {
   title: "Create Next App",
@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={playfairDisplay.className}>{children}</body>
+      <body className={font.className}>{children}</body>
     </html>
   );
 }
